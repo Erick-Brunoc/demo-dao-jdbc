@@ -1,7 +1,9 @@
 package demo.dao.jdbc1;
 
+import Entidades.DAOfactory;
 import Entidades.Departamento;
 import Entidades.Vendedor;
+import Interface.VendedorDAO;
 import java.util.Date;
 
 public class DemoDaoJdbc1 {
@@ -12,6 +14,8 @@ public class DemoDaoJdbc1 {
         
         Vendedor vend = new Vendedor (20, "Erick", "Erick@gmail.com", new Date(),2000.0, dp);
         System.out.println(vend);
+        
+        VendedorDAO  vendedorDAO = DAOfactory.criaVendedorDAO();
         
         
     }
